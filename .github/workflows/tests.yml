@@ -14,7 +14,8 @@ jobs:
           node-version: '12.x'
       - run: npm i
       - run: npm test
-      - uses: actions/upload-artifact@v1
+      - name: Archive the results
+        uses: actions/upload-artifact@v1
         with:
-          name: output
+          name: cucumber-report
           path: output/cucumber_report.json
