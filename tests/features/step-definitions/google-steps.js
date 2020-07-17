@@ -1,20 +1,20 @@
 const { When, Then, And, Given } = require("cucumber")
 const scope = require("../utils/scope");
 const puppeteer = require("puppeteer")
+const { expect } = require("chai");
 
 Given("The browser is open", async function () {
-  this.browser = await puppeteer.launch(scope.options)
-  this.page = await this.browser.newPage();
+  scope.browser = await puppeteer.launch(scope.options)
+  scope.page = await scope.browser.newPage();
 })
 
-When('open the Google page', async function () {
-  await this.page.goto("https://google.com")
+When('open the Jumbo page', async function () {
+  await scope.page.goto("https://google.com")
 });
 
-When('search for chercher tech', async function () {
 
-});
+Then('the title should be {string}', async function (title) {
+  const pageTitle = await scope.page.title();
+  expect(title).equal(pageTitle);
 
-Then('Count the results', async function () {
-  this.browser.close()
 });
