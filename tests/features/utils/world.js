@@ -10,7 +10,7 @@ const World = function ({ attach, parameters }) {
 
 
   let opts = {
-    headless: false,
+    headless: true,
     slowMo: 0
   };
 

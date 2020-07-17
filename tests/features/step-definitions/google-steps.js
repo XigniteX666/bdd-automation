@@ -9,7 +9,7 @@ Given("The browser is open", async function () {
 })
 
 When('open the Jumbo page', async function () {
-  await scope.page.goto("https://jumbo.com")
+  await scope.page.goto("https://google.com")
 });
 
 
