@@ -5,16 +5,18 @@ const { expect } = require("chai");
 
 Given("The browser is open", async function () {
   scope.browser = await puppeteer.launch(scope.options)
-  scope.page = await scope.browser.newPage();
+  scope.context.currentPage = await scope.browser.newPage();
 })
 
 When('open the Jumbo page', async function () {
-  await scope.page.goto("https://google.com")
+  await scope.context.currentPage.goto("https://google.com")
+  let screenshot = await scope.context.currentPage.screenshot();
+  this.attach(screenshot, "image/png");
 });
 
 
 Then('the title should be {string}', async function (title) {
-  const pageTitle = await scope.page.title();
+  const pageTitle = await scope.context.currentPage.title();
   expect(title).equal(pageTitle);
 
 });
