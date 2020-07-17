@@ -25,7 +25,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2813000000
+              "duration": 1998000000
             }
           },
           {
@@ -38,21 +38,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5177000000
+              "duration": 3467000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 7,
-            "name": "the title should be \"Altijd lage prijzen op je dagelijkse boodschappen | Jumbo Supermarkten\"",
+            "name": "the title should be \"Google\"",
             "match": {
               "location": "tests\\features\\step-definitions\\google-steps.js:16"
             },
             "result": {
-              "status": "failed",
-              "duration": 12000000,
-              "error_message": "AssertionError\n    + expected - actual\n\n    -Altijd lage prijzen op je dagelijkse boodschappen | Jumbo Supermarkten\n    +Google\n\n    at World.<anonymous> (C:\\Users\\oalbers\\Documents\\GIT\\Jumbo\\bdd-automation\\tests\\features\\step-definitions\\google-steps.js:18:17)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)"
+              "status": "passed",
+              "duration": 4000000
             }
           },
           {
@@ -63,7 +62,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           }
         ]
@@ -97,7 +96,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -123,7 +122,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -134,7 +133,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ]
