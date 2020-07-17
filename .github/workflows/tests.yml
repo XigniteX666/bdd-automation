@@ -18,7 +18,7 @@ jobs:
           npm install
           npm test
       - name: Archive the results
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@master
         with:
           name: cucumber-report
-          path: output/cucumber_report.json
+          path: output/cucumber_report.html
