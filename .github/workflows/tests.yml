@@ -16,8 +16,7 @@ jobs:
       - name: npm install and test
         run: |
           npm install
-          npm test
-          npm run test:report
+          npm run ci
       - name: Archive code coverage results
         uses: actions/upload-artifact@v1
         with:
