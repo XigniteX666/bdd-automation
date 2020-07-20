@@ -4,4 +4,4 @@ Feature: Check title in google
 	Scenario: Verify the title of the page
 		Given The browser is open
 		When open the Jumbo page
-		Then the title should be "Google"
+		Then the title should be "Sample Site"

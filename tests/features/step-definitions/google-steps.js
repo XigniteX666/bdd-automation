@@ -9,7 +9,7 @@ Given("The browser is open", async function () {
 })
 
 When('open the Jumbo page', async function () {
-  await scope.context.currentPage.goto("https://google.com")
+  await scope.context.currentPage.goto("http://localhost:8080")
   let screenshot = await scope.context.currentPage.screenshot();
   this.attach(screenshot, "image/png");
 });
