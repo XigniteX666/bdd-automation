@@ -21,6 +21,7 @@ jobs:
         if: ${{ always() }}
         run: npm run report
       - name: Archive code coverage results
+        if: ${{ always() }}
         uses: actions/upload-artifact@v1
         with:
           name: cucumber-report
