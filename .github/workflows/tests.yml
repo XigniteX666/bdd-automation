@@ -18,6 +18,7 @@ jobs:
           npm install
           npm run ci
       - name: create report
+        if: ${{ always() }}
         run: npm run report
       - name: Archive code coverage results
         uses: actions/upload-artifact@v1
