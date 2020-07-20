@@ -6,7 +6,7 @@
   "scripts": {
     "start-server": "node ./server.js",
     "test": "cucumber-js tests/features/*.feature -f json:output/cucumber_report.json",
-    "posttest": "node report.js",
+    "report": "node report.js",
     "ci": "start-server-and-test start-server http://localhost:8080 test"
   },
   "author": "",
