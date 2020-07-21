@@ -8,8 +8,8 @@ Given("The browser is open", async function () {
   scope.context.currentPage = await scope.browser.newPage();
 })
 
-When('open the Jumbo page', async function () {
-  await scope.context.currentPage.goto("http://localhost:8080")
+When('open the homepage', async function () {
+  await scope.context.currentPage.goto("http://localhost:666")
   let screenshot = await scope.context.currentPage.screenshot();
   this.attach(screenshot, "image/png");
 });

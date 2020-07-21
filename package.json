@@ -7,7 +7,7 @@
     "start-server": "node ./server.js",
     "test": "cucumber-js tests/features/*.feature -f json:output/cucumber_report.json",
     "report": "node report.js",
-    "ci": "start-server-and-test start-server http://localhost:8080 test"
+    "ci": "start-server-and-test start-server http://localhost:666 test"
   },
   "author": "",
   "license": "ISC",
