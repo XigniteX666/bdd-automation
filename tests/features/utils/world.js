@@ -11,7 +11,8 @@ const World = function ({ attach, parameters }) {
 
   let opts = {
     headless: true,
-    slowMo: 0
+    slowMo: 0,
+    args: ["--no-sandbox"]
   };
 
 
