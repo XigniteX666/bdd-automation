@@ -9,7 +9,7 @@ Given("The browser is open", async function () {
 })
 
 When('open the homepage', async function () {
-  await scope.context.currentPage.goto("http://localhost:666")
+  await scope.context.currentPage.goto("https://acc-ish.jumbo.com/INTERSHOP/web/WFS/Jumbo-Grocery-Site/nl_NL/-/EUR/ViewLogin-Start?SourceURL=ViewMyJumbo-Start")
   let screenshot = await scope.context.currentPage.screenshot();
   this.attach(screenshot, "image/png");
 });
